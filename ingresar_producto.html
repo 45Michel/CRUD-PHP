@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar Producto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ingresar Producto</h1>
+        <form action="procesar_producto.php" method="POST">
+            <label for="nombre_producto">Nombre del Producto:</label>
+            <input type="text" id="nombre_producto" name="nombre_producto" required>
+
+            <label for="precio_producto">Precio del Producto:</label>
+            <input type="number" id="precio_producto" name="precio_producto" step="0.01" required>
+
+            <label for="id_categoria">Categoría:</label>
+            <select id="id_categoria" name="id_categoria" required>
+                <option value="1">Electrónica</option>
+                <option value="2">Ropa</option>
+                <option value="3">Alimentos</option>
+            </select>
+
+            <button type="submit">Guardar Producto</button>
+        </form>
+
+        <!-- Botón para regresar al Dashboard -->
+        <button type="button" onclick="window.location.href='dashboard.php';">Volver al Dashboard</button>
+    </div>
+</body>
+</html>

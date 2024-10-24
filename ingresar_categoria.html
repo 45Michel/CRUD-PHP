@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar categoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ingresar categoria</h1>
+        <form action="processar_categoria.php" method="POST">
+            <label for="nombre_producto">Nombre de la categoria</label>
+            <input type="text" id="nombre_categoria" name="nombre_categoria" required>
+
+
+            <button type="submit">Guardar categoria</button>
+        </form>
+
+        <!-- Botón para regresar al Dashboard -->
+        <button type="button" onclick="window.location.href='dashboard.php';">Volver al Dashboard</button>
+    </div>
+</body>
+</html>
